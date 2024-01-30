@@ -2,10 +2,10 @@ package ru.netology
 
 class Comments(val comment: String)
 data class Post(val id: Int,
-           val date: Int,
+           val date: Int?,
            val text: String,
            val friendsOnly: Boolean,
-           val comments: Comments,
+           val comments: Comments?,
            val canPin: Boolean,
            val canDelete: Boolean,
            val canEdit: Boolean,
